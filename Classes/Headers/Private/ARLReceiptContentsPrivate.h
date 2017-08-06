@@ -33,25 +33,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ARLReceiptContents ()
-@property (nonatomic, copy, readwrite) NSString *bundleId;
-@property (nonatomic, copy, readwrite) NSData *bundleIdData;
-@property (nonatomic, copy, readwrite) NSData *opaqueData;
-@property (nonatomic, copy, readwrite) NSData *hashData;
-@property (nonatomic, copy, readwrite) NSDate *originalPurchaseDate;
-@property (nonatomic, copy, readwrite) NSString *originalPurchaseVersion;
-@property (nonatomic, copy, readwrite) NSArray<ARLInAppPurchaseContents *> *inAppPurchases;
-
 - (instancetype)initWithData:(NSData *)signedData NS_DESIGNATED_INITIALIZER;
 @end
 
 @interface ARLInAppPurchaseContents ()
-@property (nonatomic, assign, readwrite) NSUInteger quantity;
-@property (nonatomic, copy, readwrite) NSString *productId;
-@property (nonatomic, copy, readwrite) NSString *transactionId;
-@property (nonatomic, copy, readwrite) NSString *originalTransactionId;
-@property (nonatomic, copy, readwrite) NSDate *purchaseDate;
-@property (nonatomic, copy, readwrite) NSDate *originalPurchaseDate;
-
 - (instancetype)initWithData:(NSData *)signedData NS_DESIGNATED_INITIALIZER;
 @end
 

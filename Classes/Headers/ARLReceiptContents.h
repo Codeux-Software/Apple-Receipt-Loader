@@ -36,6 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ARLReceiptContents : NSObject
 @property (readonly, copy) NSString *bundleId;
+@property (readonly, copy) NSData *bundleIdData;
 @property (readonly, copy) NSData *opaqueData;
 @property (readonly, copy) NSData *hashData;
 @property (readonly, copy) NSDate *originalPurchaseDate;
