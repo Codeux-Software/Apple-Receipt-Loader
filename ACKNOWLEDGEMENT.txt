@@ -1,0 +1,5 @@
+
+Portions of the “Apple Receipt Loader” framework may utilize
+3rd party copyrighted works, the use of which is hereby 
+acknowledged. See the “Documentation” directory for author 
+and license information for these works.

@@ -1,3 +1,8 @@
+The “Apple Receipt Loader” framework consists of several components which are 
+distributed under different licenses. Work originating from Codeux Software, LLC 
+falls under the following license declaration. All other work, including license 
+information, can be found by viewing the included ACKNOWLEDGEMENT.txt file.
+
 /* *********************************************************************
 
         Copyright (c) 2010 - 2017 Codeux Software, LLC
