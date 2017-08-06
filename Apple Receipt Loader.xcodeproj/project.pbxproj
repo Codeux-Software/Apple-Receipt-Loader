@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C5189951F3751D5007C161C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5189901F3751C0007C161C /* Foundation.framework */; };
+		4C5189961F3751D7007C161C /* libasn1c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5189921F3751C9007C161C /* libasn1c.a */; };
+		4C5189971F3751D8007C161C /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5189931F3751C9007C161C /* libcrypto.a */; };
+		4C51899A1F375240007C161C /* ARLReceiptContents.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C5189981F375240007C161C /* ARLReceiptContents.h */; };
+		4C51899B1F375240007C161C /* ARLReceiptContents.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5189991F375240007C161C /* ARLReceiptContents.m */; };
+		4C51899D1F37532F007C161C /* ARLReceiptContentsPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C51899C1F37532F007C161C /* ARLReceiptContentsPrivate.h */; };
+		4C5189A01F375368007C161C /* ARLReceiptLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C51899E1F375368007C161C /* ARLReceiptLoader.h */; };
+		4C5189A11F375368007C161C /* ARLReceiptLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C51899F1F375368007C161C /* ARLReceiptLoader.m */; };
+		4CB369F91F37619A00D2A554 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB369F81F37619A00D2A554 /* IOKit.framework */; };
+		4CB369FB1F376C5500D2A554 /* ARLReceiptLoaderPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CB369FA1F376C5500D2A554 /* ARLReceiptLoaderPrivate.h */; };
+		4CB369FD1F376C8400D2A554 /* ARLReceiptLoaderHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB369FC1F376C8400D2A554 /* ARLReceiptLoaderHelpers.m */; };
+		4CEFF2DA1F376CD600B50365 /* ARLReceiptLoaderHelpersPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CEFF2D91F376CD600B50365 /* ARLReceiptLoaderHelpersPrivate.h */; };
+		4CEFF2DC1F376CE500B50365 /* ARLReceiptLoaderHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CEFF2DB1F376CE500B50365 /* ARLReceiptLoaderHelpers.h */; };
+		4CEFF2DF1F376FB300B50365 /* ARLReceiptContentsDecoderPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CEFF2DD1F376FB300B50365 /* ARLReceiptContentsDecoderPrivate.h */; };
+		4CEFF2E01F376FB300B50365 /* ARLReceiptContentsDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEFF2DE1F376FB300B50365 /* ARLReceiptContentsDecoder.m */; };
+		4CEFF2EC1F37798B00B50365 /* ARLReceiptAttributePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CEFF2EA1F37798B00B50365 /* ARLReceiptAttributePrivate.h */; };
+		4CEFF2ED1F37798B00B50365 /* ARLReceiptAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEFF2EB1F37798B00B50365 /* ARLReceiptAttribute.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4C1A57391F37886800E128B2 /* libreceipt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libreceipt.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C5189721F374EC9007C161C /* Build Configuration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Build Configuration.xcconfig"; sourceTree = "<group>"; };
+		4C5189731F374EC9007C161C /* Entitlements.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Entitlements.entitlements; sourceTree = "<group>"; };
+		4C5189751F374EC9007C161C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C5189761F374F63007C161C /* AppleReceiptLoader_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppleReceiptLoader_Prefix.pch; path = Headers/Private/AppleReceiptLoader_Prefix.pch; sourceTree = "<group>"; };
+		4C5189901F3751C0007C161C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4C5189921F3751C9007C161C /* libasn1c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libasn1c.a; path = Libraries/Libraries/libasn1c.a; sourceTree = "<group>"; };
+		4C5189931F3751C9007C161C /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = Libraries/Libraries/libcrypto.a; sourceTree = "<group>"; };
+		4C5189981F375240007C161C /* ARLReceiptContents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARLReceiptContents.h; path = Headers/ARLReceiptContents.h; sourceTree = "<group>"; };
+		4C5189991F375240007C161C /* ARLReceiptContents.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARLReceiptContents.m; sourceTree = "<group>"; };
+		4C51899C1F37532F007C161C /* ARLReceiptContentsPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARLReceiptContentsPrivate.h; path = Headers/Private/ARLReceiptContentsPrivate.h; sourceTree = "<group>"; };
+		4C51899E1F375368007C161C /* ARLReceiptLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARLReceiptLoader.h; path = Headers/ARLReceiptLoader.h; sourceTree = "<group>"; };
+		4C51899F1F375368007C161C /* ARLReceiptLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARLReceiptLoader.m; sourceTree = "<group>"; };
+		4C5189A41F3754F1007C161C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4CB369F81F37619A00D2A554 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		4CB369FA1F376C5500D2A554 /* ARLReceiptLoaderPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARLReceiptLoaderPrivate.h; path = Headers/Private/ARLReceiptLoaderPrivate.h; sourceTree = "<group>"; };
+		4CB369FC1F376C8400D2A554 /* ARLReceiptLoaderHelpers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARLReceiptLoaderHelpers.m; sourceTree = "<group>"; };
+		4CEFF2D91F376CD600B50365 /* ARLReceiptLoaderHelpersPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARLReceiptLoaderHelpersPrivate.h; path = Headers/Private/ARLReceiptLoaderHelpersPrivate.h; sourceTree = "<group>"; };
+		4CEFF2DB1F376CE500B50365 /* ARLReceiptLoaderHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARLReceiptLoaderHelpers.h; path = Headers/ARLReceiptLoaderHelpers.h; sourceTree = "<group>"; };
+		4CEFF2DD1F376FB300B50365 /* ARLReceiptContentsDecoderPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARLReceiptContentsDecoderPrivate.h; path = Headers/Private/ARLReceiptContentsDecoderPrivate.h; sourceTree = "<group>"; };
+		4CEFF2DE1F376FB300B50365 /* ARLReceiptContentsDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARLReceiptContentsDecoder.m; sourceTree = "<group>"; };
+		4CEFF2EA1F37798B00B50365 /* ARLReceiptAttributePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARLReceiptAttributePrivate.h; path = Headers/Private/ARLReceiptAttributePrivate.h; sourceTree = "<group>"; };
+		4CEFF2EB1F37798B00B50365 /* ARLReceiptAttribute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARLReceiptAttribute.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C51897D1F375058007C161C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5189951F3751D5007C161C /* Foundation.framework in Frameworks */,
+				4CB369F91F37619A00D2A554 /* IOKit.framework in Frameworks */,
+				4C5189961F3751D7007C161C /* libasn1c.a in Frameworks */,
+				4C5189971F3751D8007C161C /* libcrypto.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C51896F1F374EC9007C161C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4C5189771F374F6F007C161C /* Headers */,
+				4C5189991F375240007C161C /* ARLReceiptContents.m */,
+				4CEFF2DE1F376FB300B50365 /* ARLReceiptContentsDecoder.m */,
+				4C51899F1F375368007C161C /* ARLReceiptLoader.m */,
+				4CB369FC1F376C8400D2A554 /* ARLReceiptLoaderHelpers.m */,
+				4CEFF2EB1F37798B00B50365 /* ARLReceiptAttribute.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4C5189701F374EC9007C161C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C5189711F374EC9007C161C /* Build Configuration */,
+				4C5189741F374EC9007C161C /* Language Files */,
+				4C5189751F374EC9007C161C /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4C5189711F374EC9007C161C /* Build Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				4C5189721F374EC9007C161C /* Build Configuration.xcconfig */,
+				4C5189731F374EC9007C161C /* Entitlements.entitlements */,
+			);
+			path = "Build Configuration";
+			sourceTree = "<group>";
+		};
+		4C5189741F374EC9007C161C /* Language Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Language Files";
+			sourceTree = "<group>";
+		};
+		4C5189771F374F6F007C161C /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				4C5189781F374F77007C161C /* Private */,
+				4C5189981F375240007C161C /* ARLReceiptContents.h */,
+				4C51899E1F375368007C161C /* ARLReceiptLoader.h */,
+				4CEFF2DB1F376CE500B50365 /* ARLReceiptLoaderHelpers.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		4C5189781F374F77007C161C /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				4C5189761F374F63007C161C /* AppleReceiptLoader_Prefix.pch */,
+				4CEFF2EA1F37798B00B50365 /* ARLReceiptAttributePrivate.h */,
+				4CEFF2DD1F376FB300B50365 /* ARLReceiptContentsDecoderPrivate.h */,
+				4C51899C1F37532F007C161C /* ARLReceiptContentsPrivate.h */,
+				4CEFF2D91F376CD600B50365 /* ARLReceiptLoaderHelpersPrivate.h */,
+				4CB369FA1F376C5500D2A554 /* ARLReceiptLoaderPrivate.h */,
+			);
+			name = Private;
+			sourceTree = "<group>";
+		};
+		4C51898A1F375161007C161C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CB369F81F37619A00D2A554 /* IOKit.framework */,
+				4C5189911F3751C3007C161C /* External Libraries */,
+				4C51898F1F3751B9007C161C /* System Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C51898F1F3751B9007C161C /* System Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C5189A41F3754F1007C161C /* Security.framework */,
+				4C5189901F3751C0007C161C /* Foundation.framework */,
+			);
+			name = "System Frameworks";
+			sourceTree = "<group>";
+		};
+		4C5189911F3751C3007C161C /* External Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				4C5189921F3751C9007C161C /* libasn1c.a */,
+				4C5189931F3751C9007C161C /* libcrypto.a */,
+			);
+			name = "External Libraries";
+			sourceTree = "<group>";
+		};
+		4C8FA3E01F37420100FAD165 = {
+			isa = PBXGroup;
+			children = (
+				4C51896F1F374EC9007C161C /* Classes */,
+				4C5189701F374EC9007C161C /* Resources */,
+				4C51898A1F375161007C161C /* Frameworks */,
+				4CEFF2E91F37779D00B50365 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4CEFF2E91F37779D00B50365 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C1A57391F37886800E128B2 /* libreceipt.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4C51897E1F375058007C161C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CB369FB1F376C5500D2A554 /* ARLReceiptLoaderPrivate.h in Headers */,
+				4C51899A1F375240007C161C /* ARLReceiptContents.h in Headers */,
+				4CEFF2EC1F37798B00B50365 /* ARLReceiptAttributePrivate.h in Headers */,
+				4C5189A01F375368007C161C /* ARLReceiptLoader.h in Headers */,
+				4C51899D1F37532F007C161C /* ARLReceiptContentsPrivate.h in Headers */,
+				4CEFF2DF1F376FB300B50365 /* ARLReceiptContentsDecoderPrivate.h in Headers */,
+				4CEFF2DC1F376CE500B50365 /* ARLReceiptLoaderHelpers.h in Headers */,
+				4CEFF2DA1F376CD600B50365 /* ARLReceiptLoaderHelpersPrivate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4C51897F1F375058007C161C /* libreceipt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C5189861F375058007C161C /* Build configuration list for PBXNativeTarget "libreceipt" */;
+			buildPhases = (
+				4C51897C1F375058007C161C /* Sources */,
+				4C51897D1F375058007C161C /* Frameworks */,
+				4C51897E1F375058007C161C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libreceipt;
+			productName = libreceipt;
+			productReference = 4C1A57391F37886800E128B2 /* libreceipt.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C8FA3E11F37420100FAD165 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Codeux Software, LLC";
+				TargetAttributes = {
+					4C51897F1F375058007C161C = {
+						CreatedOnToolsVersion = 9.0;
+					};
+				};
+			};
+			buildConfigurationList = 4C8FA3E41F37420100FAD165 /* Build configuration list for PBXProject "Apple Receipt Loader" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4C8FA3E01F37420100FAD165;
+			productRefGroup = 4C8FA3E01F37420100FAD165;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C51897F1F375058007C161C /* libreceipt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C51897C1F375058007C161C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C51899B1F375240007C161C /* ARLReceiptContents.m in Sources */,
+				4CEFF2E01F376FB300B50365 /* ARLReceiptContentsDecoder.m in Sources */,
+				4CB369FD1F376C8400D2A554 /* ARLReceiptLoaderHelpers.m in Sources */,
+				4C5189A11F375368007C161C /* ARLReceiptLoader.m in Sources */,
+				4CEFF2ED1F37798B00B50365 /* ARLReceiptAttribute.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4C5189871F375058007C161C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				INFOPLIST_FILE = Resources/Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libraries/Libraries",
+				);
+				PRODUCT_NAME = receipt;
+			};
+			name = Release;
+		};
+		4C8FA3F11F37420100FAD165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C5189721F374EC9007C161C /* Build Configuration.xcconfig */;
+			buildSettings = {
+				GCC_PREFIX_HEADER = Classes/Headers/Private/AppleReceiptLoader_Prefix.pch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C5189861F375058007C161C /* Build configuration list for PBXNativeTarget "libreceipt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C5189871F375058007C161C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C8FA3E41F37420100FAD165 /* Build configuration list for PBXProject "Apple Receipt Loader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C8FA3F11F37420100FAD165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C8FA3E11F37420100FAD165 /* Project object */;
+}
