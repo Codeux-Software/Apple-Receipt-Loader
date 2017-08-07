@@ -85,8 +85,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 	NSArray *attributes = _ARLDecodeReceiptPayload(signedData);
 
-	if (attributes == nil) {
-		NSAssert(NO, @"Failed to decode in-app purchase");
+	if (attributes.count == 0) {
+		NSAssert(NO, @"Failed to decode receipt contents");
 	}
 
 	[self populateAttributes:attributes];
@@ -161,7 +161,7 @@ NS_ASSUME_NONNULL_BEGIN
 	}
 
 	if (inAppPurchases) {
-		[self populateInAppPurchasesWithAttributes:attributes];
+		[self populateInAppPurchasesWithAttributes:inAppPurchases];
 	} else {
 		self.inAppPurchases = @[];
 	}
@@ -220,7 +220,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 	NSArray *attributes = _ARLDecodeReceiptPayload(signedData);
 
-	if (attributes == nil) {
+	if (attributes.count == 0) {
 		NSAssert(NO, @"Failed to decode in-app purchase");
 	}
 
