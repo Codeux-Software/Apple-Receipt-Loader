@@ -41,7 +41,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, copy) NSData *hashData;
 @property (readonly, copy) NSDate *originalPurchaseDate;
 @property (readonly, copy) NSString *originalPurchaseVersion;
-@property (readonly, copy) NSArray<ARLInAppPurchaseContents *> *inAppPurchases;
+@property (readonly, copy) NSDictionary<NSString *, ARLInAppPurchaseContents *> *inAppPurchases;
 @end
 
 @interface ARLInAppPurchaseContents : NSObject

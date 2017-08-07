@@ -39,7 +39,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, readwrite) NSData *hashData;
 @property (nonatomic, copy, readwrite) NSDate *originalPurchaseDate;
 @property (nonatomic, copy, readwrite) NSString *originalPurchaseVersion;
-@property (nonatomic, copy, readwrite) NSArray<ARLInAppPurchaseContents *> *inAppPurchases;
+@property (nonatomic, copy, readwrite) NSDictionary<NSString *, ARLInAppPurchaseContents *> *inAppPurchases;
 @end
 
 @interface ARLInAppPurchaseContents ()
@@ -163,7 +163,7 @@ NS_ASSUME_NONNULL_BEGIN
 	if (inAppPurchases) {
 		[self populateInAppPurchasesWithAttributes:inAppPurchases];
 	} else {
-		self.inAppPurchases = @[];
+		self.inAppPurchases = @{};
 	}
 }
 
@@ -171,14 +171,14 @@ NS_ASSUME_NONNULL_BEGIN
 {
 	NSParameterAssert(attributes != nil);
 
-	NSMutableArray<ARLInAppPurchaseContents *> *inAppPurchases = nil;
+	NSMutableDictionary<NSString *, ARLInAppPurchaseContents *> *inAppPurchases = [NSMutableDictionary dictionary];
 
 	for (ARLReceiptAttribute *attribute in attributes)
 	{
 		ARLInAppPurchaseContents *purchase =
 		[[ARLInAppPurchaseContents alloc] initWithData:attribute.dataValue];
 
-		[inAppPurchases addObject:purchase];
+		[inAppPurchases setObject:purchase forKey:purchase.productId];
 	}
 
 	self.inAppPurchases = inAppPurchases;
