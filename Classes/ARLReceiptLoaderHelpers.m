@@ -69,7 +69,7 @@ NSData * _Nullable _ARLDigestForReceipt(ARLReceiptContents *receipt)
 	/* Concatenate the pieces to be hashed.  They must be concatenated in this order. */
 	EVP_DigestUpdate(&evp_ctx, macAddress.bytes, macAddress.length);
 	EVP_DigestUpdate(&evp_ctx, receipt.opaqueData.bytes, receipt.opaqueData.length);
-	EVP_DigestUpdate(&evp_ctx, receipt.bundleIdData.bytes, receipt.bundleIdData.length);
+	EVP_DigestUpdate(&evp_ctx, receipt.bundleIdentifierData.bytes, receipt.bundleIdentifierData.length);
 
 	/* Compute the hash, saving the result into the digest variable. */
 	EVP_DigestFinal_ex(&evp_ctx, digest.mutableBytes, NULL);

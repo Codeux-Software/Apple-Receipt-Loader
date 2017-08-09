@@ -33,10 +33,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @class ARLInAppPurchaseContents;
+@class SKPaymentTransaction;
 
 @interface ARLReceiptContents : NSObject
-@property (readonly, copy) NSString *bundleId;
-@property (readonly, copy) NSData *bundleIdData;
+@property (readonly, copy) NSString *bundleIdentifier;
+@property (readonly, copy) NSData *bundleIdentifierData;
 @property (readonly, copy) NSData *opaqueData;
 @property (readonly, copy) NSData *hashData;
 @property (readonly, copy) NSDate *originalPurchaseDate;
@@ -46,9 +47,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ARLInAppPurchaseContents : NSObject
 @property (readonly) NSUInteger quantity;
-@property (readonly, copy) NSString *productId;
-@property (readonly, copy) NSString *transactionId;
-@property (readonly, copy) NSString *originalTransactionId;
+@property (readonly, copy) NSString *productIdentifier;
+@property (readonly, copy) NSString *transactionIdentifier;
+@property (readonly, copy) NSString *originalTransactionIdentifier;
 @property (readonly, copy) NSDate *purchaseDate;
 @property (readonly, copy) NSDate *originalPurchaseDate;
 @end

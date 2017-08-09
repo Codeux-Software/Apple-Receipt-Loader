@@ -30,11 +30,13 @@
 
  *********************************************************************** */
 
+#import <StoreKit/StoreKit.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ARLReceiptContents ()
-@property (nonatomic, copy, readwrite) NSString *bundleId;
-@property (nonatomic, copy, readwrite) NSData *bundleIdData;
+@property (nonatomic, copy, readwrite) NSString *bundleIdentifier;
+@property (nonatomic, copy, readwrite) NSData *bundleIdentifierData;
 @property (nonatomic, copy, readwrite) NSData *opaqueData;
 @property (nonatomic, copy, readwrite) NSData *hashData;
 @property (nonatomic, copy, readwrite) NSDate *originalPurchaseDate;
@@ -44,9 +46,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ARLInAppPurchaseContents ()
 @property (nonatomic, assign, readwrite) NSUInteger quantity;
-@property (nonatomic, copy, readwrite) NSString *productId;
-@property (nonatomic, copy, readwrite) NSString *transactionId;
-@property (nonatomic, copy, readwrite) NSString *originalTransactionId;
+@property (nonatomic, copy, readwrite) NSString *productIdentifier;
+@property (nonatomic, copy, readwrite) NSString *transactionIdentifier;
+@property (nonatomic, copy, readwrite) NSString *originalTransactionIdentifier;
 @property (nonatomic, copy, readwrite) NSDate *purchaseDate;
 @property (nonatomic, copy, readwrite) NSDate *originalPurchaseDate;
 @end
@@ -103,9 +105,9 @@ NS_ASSUME_NONNULL_BEGIN
 		switch (attribute.type) {
 			case ARLPayloadAttributeBundleIdType:
 			{
-				self.bundleIdData = attribute.dataValue;
+				self.bundleIdentifierData = attribute.dataValue;
 
-				self.bundleId = attribute.stringValue;
+				self.bundleIdentifier = attribute.stringValue;
 
 				break;
 			}
@@ -150,8 +152,8 @@ NS_ASSUME_NONNULL_BEGIN
 		}
 	}
 
-	if (self.bundleIdData == nil ||
-		self.bundleId == nil ||
+	if (self.bundleIdentifierData == nil ||
+		self.bundleIdentifier == nil ||
 		self.opaqueData == nil ||
 		self.hashData == nil ||
 		self.originalPurchaseDate == nil ||
@@ -178,7 +180,7 @@ NS_ASSUME_NONNULL_BEGIN
 		ARLInAppPurchaseContents *purchase =
 		[[ARLInAppPurchaseContents alloc] initWithData:attribute.dataValue];
 
-		[inAppPurchases setObject:purchase forKey:purchase.productId];
+		[inAppPurchases setObject:purchase forKey:purchase.productIdentifier];
 	}
 
 	self.inAppPurchases = inAppPurchases;
@@ -242,13 +244,13 @@ NS_ASSUME_NONNULL_BEGIN
 			}
 			case ARLPayloadAttributeIAPProductIdType:
 			{
-				self.productId = attribute.stringValue;
+				self.productIdentifier = attribute.stringValue;
 
 				break;
 			}
 			case ARLPayloadAttributeIAPTransactionIdType:
 			{
-				self.transactionId = attribute.stringValue;
+				self.transactionIdentifier = attribute.stringValue;
 
 				break;
 			}
@@ -260,7 +262,7 @@ NS_ASSUME_NONNULL_BEGIN
 			}
 			case ARLPayloadAttributeIAPOriginalTransactionIdType:
 			{
-				self.originalTransactionId = attribute.stringValue;
+				self.originalTransactionIdentifier = attribute.stringValue;
 
 				break;
 			}
@@ -278,10 +280,10 @@ NS_ASSUME_NONNULL_BEGIN
 	}
 
 	if (self.quantity == 0 ||
-		self.productId == nil ||
-		self.transactionId == nil ||
+		self.productIdentifier == nil ||
+		self.transactionIdentifier == nil ||
 		self.purchaseDate == nil ||
-		self.originalTransactionId == nil ||
+		self.originalTransactionIdentifier == nil ||
 		self.originalPurchaseDate == nil)
 	{
 		NSAssert(NO, @"One or more values are missing");

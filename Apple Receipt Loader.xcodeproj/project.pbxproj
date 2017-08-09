@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C04AE3D1F3A72F00095FCC6 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C04AE3C1F3A72E50095FCC6 /* IOKit.framework */; };
+		4C04AE3E1F3A72F00095FCC6 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C04AE3B1F3A72E50095FCC6 /* StoreKit.framework */; };
 		4C5189951F3751D5007C161C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5189901F3751C0007C161C /* Foundation.framework */; };
 		4C5189961F3751D7007C161C /* libasn1c.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5189921F3751C9007C161C /* libasn1c.a */; };
 		4C5189971F3751D8007C161C /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5189931F3751C9007C161C /* libcrypto.a */; };
@@ -15,7 +17,6 @@
 		4C51899D1F37532F007C161C /* ARLReceiptContentsPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C51899C1F37532F007C161C /* ARLReceiptContentsPrivate.h */; };
 		4C5189A01F375368007C161C /* ARLReceiptLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C51899E1F375368007C161C /* ARLReceiptLoader.h */; };
 		4C5189A11F375368007C161C /* ARLReceiptLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C51899F1F375368007C161C /* ARLReceiptLoader.m */; };
-		4CB369F91F37619A00D2A554 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB369F81F37619A00D2A554 /* IOKit.framework */; };
 		4CB369FB1F376C5500D2A554 /* ARLReceiptLoaderPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CB369FA1F376C5500D2A554 /* ARLReceiptLoaderPrivate.h */; };
 		4CB369FD1F376C8400D2A554 /* ARLReceiptLoaderHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB369FC1F376C8400D2A554 /* ARLReceiptLoaderHelpers.m */; };
 		4CEFF2DA1F376CD600B50365 /* ARLReceiptLoaderHelpersPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CEFF2D91F376CD600B50365 /* ARLReceiptLoaderHelpersPrivate.h */; };
@@ -27,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C04AE3B1F3A72E50095FCC6 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		4C04AE3C1F3A72E50095FCC6 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		4C1A57391F37886800E128B2 /* libreceipt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libreceipt.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C5189721F374EC9007C161C /* Build Configuration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Build Configuration.xcconfig"; sourceTree = "<group>"; };
 		4C5189731F374EC9007C161C /* Entitlements.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Entitlements.entitlements; sourceTree = "<group>"; };
@@ -41,7 +44,6 @@
 		4C51899E1F375368007C161C /* ARLReceiptLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARLReceiptLoader.h; path = Headers/ARLReceiptLoader.h; sourceTree = "<group>"; };
 		4C51899F1F375368007C161C /* ARLReceiptLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARLReceiptLoader.m; sourceTree = "<group>"; };
 		4C5189A41F3754F1007C161C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		4CB369F81F37619A00D2A554 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		4CB369FA1F376C5500D2A554 /* ARLReceiptLoaderPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARLReceiptLoaderPrivate.h; path = Headers/Private/ARLReceiptLoaderPrivate.h; sourceTree = "<group>"; };
 		4CB369FC1F376C8400D2A554 /* ARLReceiptLoaderHelpers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARLReceiptLoaderHelpers.m; sourceTree = "<group>"; };
 		4CEFF2D91F376CD600B50365 /* ARLReceiptLoaderHelpersPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARLReceiptLoaderHelpersPrivate.h; path = Headers/Private/ARLReceiptLoaderHelpersPrivate.h; sourceTree = "<group>"; };
@@ -58,7 +60,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C5189951F3751D5007C161C /* Foundation.framework in Frameworks */,
-				4CB369F91F37619A00D2A554 /* IOKit.framework in Frameworks */,
+				4C04AE3D1F3A72F00095FCC6 /* IOKit.framework in Frameworks */,
+				4C04AE3E1F3A72F00095FCC6 /* StoreKit.framework in Frameworks */,
 				4C5189961F3751D7007C161C /* libasn1c.a in Frameworks */,
 				4C5189971F3751D8007C161C /* libcrypto.a in Frameworks */,
 			);
@@ -133,7 +136,6 @@
 		4C51898A1F375161007C161C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4CB369F81F37619A00D2A554 /* IOKit.framework */,
 				4C5189911F3751C3007C161C /* External Libraries */,
 				4C51898F1F3751B9007C161C /* System Frameworks */,
 			);
@@ -143,8 +145,10 @@
 		4C51898F1F3751B9007C161C /* System Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4C5189A41F3754F1007C161C /* Security.framework */,
 				4C5189901F3751C0007C161C /* Foundation.framework */,
+				4C04AE3C1F3A72E50095FCC6 /* IOKit.framework */,
+				4C5189A41F3754F1007C161C /* Security.framework */,
+				4C04AE3B1F3A72E50095FCC6 /* StoreKit.framework */,
 			);
 			name = "System Frameworks";
 			sourceTree = "<group>";
