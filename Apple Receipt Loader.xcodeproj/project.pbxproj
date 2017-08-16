@@ -31,27 +31,27 @@
 		4C04AE3B1F3A72E50095FCC6 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		4C04AE3C1F3A72E50095FCC6 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		4C1A57391F37886800E128B2 /* libreceipt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libreceipt.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C5189721F374EC9007C161C /* Build Configuration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Build Configuration.xcconfig"; sourceTree = "<group>"; };
-		4C5189731F374EC9007C161C /* Entitlements.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Entitlements.entitlements; sourceTree = "<group>"; };
-		4C5189751F374EC9007C161C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C5189761F374F63007C161C /* AppleReceiptLoader_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppleReceiptLoader_Prefix.pch; path = Headers/Private/AppleReceiptLoader_Prefix.pch; sourceTree = "<group>"; };
+		4C5189721F374EC9007C161C /* Build Configuration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Build Configuration.xcconfig"; path = "Resources/Build Configuration/Build Configuration.xcconfig"; sourceTree = "<group>"; };
+		4C5189731F374EC9007C161C /* Entitlements.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Entitlements.entitlements; path = "Resources/Build Configuration/Entitlements.entitlements"; sourceTree = "<group>"; };
+		4C5189751F374EC9007C161C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
+		4C5189761F374F63007C161C /* AppleReceiptLoader_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppleReceiptLoader_Prefix.pch; path = Classes/Headers/Private/AppleReceiptLoader_Prefix.pch; sourceTree = "<group>"; };
 		4C5189901F3751C0007C161C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4C5189921F3751C9007C161C /* libasn1c.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libasn1c.a; path = Libraries/Libraries/libasn1c.a; sourceTree = "<group>"; };
 		4C5189931F3751C9007C161C /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = Libraries/Libraries/libcrypto.a; sourceTree = "<group>"; };
-		4C5189981F375240007C161C /* ARLReceiptContents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARLReceiptContents.h; path = Headers/ARLReceiptContents.h; sourceTree = "<group>"; };
-		4C5189991F375240007C161C /* ARLReceiptContents.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARLReceiptContents.m; sourceTree = "<group>"; };
-		4C51899C1F37532F007C161C /* ARLReceiptContentsPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARLReceiptContentsPrivate.h; path = Headers/Private/ARLReceiptContentsPrivate.h; sourceTree = "<group>"; };
-		4C51899E1F375368007C161C /* ARLReceiptLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARLReceiptLoader.h; path = Headers/ARLReceiptLoader.h; sourceTree = "<group>"; };
-		4C51899F1F375368007C161C /* ARLReceiptLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARLReceiptLoader.m; sourceTree = "<group>"; };
+		4C5189981F375240007C161C /* ARLReceiptContents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARLReceiptContents.h; path = Classes/Headers/ARLReceiptContents.h; sourceTree = "<group>"; };
+		4C5189991F375240007C161C /* ARLReceiptContents.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ARLReceiptContents.m; path = Classes/ARLReceiptContents.m; sourceTree = "<group>"; };
+		4C51899C1F37532F007C161C /* ARLReceiptContentsPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARLReceiptContentsPrivate.h; path = Classes/Headers/Private/ARLReceiptContentsPrivate.h; sourceTree = "<group>"; };
+		4C51899E1F375368007C161C /* ARLReceiptLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARLReceiptLoader.h; path = Classes/Headers/ARLReceiptLoader.h; sourceTree = "<group>"; };
+		4C51899F1F375368007C161C /* ARLReceiptLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ARLReceiptLoader.m; path = Classes/ARLReceiptLoader.m; sourceTree = "<group>"; };
 		4C5189A41F3754F1007C161C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		4CB369FA1F376C5500D2A554 /* ARLReceiptLoaderPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARLReceiptLoaderPrivate.h; path = Headers/Private/ARLReceiptLoaderPrivate.h; sourceTree = "<group>"; };
-		4CB369FC1F376C8400D2A554 /* ARLReceiptLoaderHelpers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARLReceiptLoaderHelpers.m; sourceTree = "<group>"; };
-		4CEFF2D91F376CD600B50365 /* ARLReceiptLoaderHelpersPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARLReceiptLoaderHelpersPrivate.h; path = Headers/Private/ARLReceiptLoaderHelpersPrivate.h; sourceTree = "<group>"; };
-		4CEFF2DB1F376CE500B50365 /* ARLReceiptLoaderHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARLReceiptLoaderHelpers.h; path = Headers/ARLReceiptLoaderHelpers.h; sourceTree = "<group>"; };
-		4CEFF2DD1F376FB300B50365 /* ARLReceiptContentsDecoderPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARLReceiptContentsDecoderPrivate.h; path = Headers/Private/ARLReceiptContentsDecoderPrivate.h; sourceTree = "<group>"; };
-		4CEFF2DE1F376FB300B50365 /* ARLReceiptContentsDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARLReceiptContentsDecoder.m; sourceTree = "<group>"; };
-		4CEFF2EA1F37798B00B50365 /* ARLReceiptAttributePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARLReceiptAttributePrivate.h; path = Headers/Private/ARLReceiptAttributePrivate.h; sourceTree = "<group>"; };
-		4CEFF2EB1F37798B00B50365 /* ARLReceiptAttribute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARLReceiptAttribute.m; sourceTree = "<group>"; };
+		4CB369FA1F376C5500D2A554 /* ARLReceiptLoaderPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARLReceiptLoaderPrivate.h; path = Classes/Headers/Private/ARLReceiptLoaderPrivate.h; sourceTree = "<group>"; };
+		4CB369FC1F376C8400D2A554 /* ARLReceiptLoaderHelpers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ARLReceiptLoaderHelpers.m; path = Classes/ARLReceiptLoaderHelpers.m; sourceTree = "<group>"; };
+		4CEFF2D91F376CD600B50365 /* ARLReceiptLoaderHelpersPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARLReceiptLoaderHelpersPrivate.h; path = Classes/Headers/Private/ARLReceiptLoaderHelpersPrivate.h; sourceTree = "<group>"; };
+		4CEFF2DB1F376CE500B50365 /* ARLReceiptLoaderHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARLReceiptLoaderHelpers.h; path = Classes/Headers/ARLReceiptLoaderHelpers.h; sourceTree = "<group>"; };
+		4CEFF2DD1F376FB300B50365 /* ARLReceiptContentsDecoderPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARLReceiptContentsDecoderPrivate.h; path = Classes/Headers/Private/ARLReceiptContentsDecoderPrivate.h; sourceTree = "<group>"; };
+		4CEFF2DE1F376FB300B50365 /* ARLReceiptContentsDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ARLReceiptContentsDecoder.m; path = Classes/ARLReceiptContentsDecoder.m; sourceTree = "<group>"; };
+		4CEFF2EA1F37798B00B50365 /* ARLReceiptAttributePrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARLReceiptAttributePrivate.h; path = Classes/Headers/Private/ARLReceiptAttributePrivate.h; sourceTree = "<group>"; };
+		4CEFF2EB1F37798B00B50365 /* ARLReceiptAttribute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ARLReceiptAttribute.m; path = Classes/ARLReceiptAttribute.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,17 +80,16 @@
 				4CB369FC1F376C8400D2A554 /* ARLReceiptLoaderHelpers.m */,
 				4CEFF2EB1F37798B00B50365 /* ARLReceiptAttribute.m */,
 			);
-			path = Classes;
+			name = Classes;
 			sourceTree = "<group>";
 		};
 		4C5189701F374EC9007C161C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				4C5189711F374EC9007C161C /* Build Configuration */,
-				4C5189741F374EC9007C161C /* Language Files */,
 				4C5189751F374EC9007C161C /* Info.plist */,
 			);
-			path = Resources;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		4C5189711F374EC9007C161C /* Build Configuration */ = {
@@ -99,14 +98,7 @@
 				4C5189721F374EC9007C161C /* Build Configuration.xcconfig */,
 				4C5189731F374EC9007C161C /* Entitlements.entitlements */,
 			);
-			path = "Build Configuration";
-			sourceTree = "<group>";
-		};
-		4C5189741F374EC9007C161C /* Language Files */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Language Files";
+			name = "Build Configuration";
 			sourceTree = "<group>";
 		};
 		4C5189771F374F6F007C161C /* Headers */ = {
