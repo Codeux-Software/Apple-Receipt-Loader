@@ -32,7 +32,6 @@
 		4C04AE3C1F3A72E50095FCC6 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		4C1A57391F37886800E128B2 /* libreceipt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libreceipt.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C5189721F374EC9007C161C /* Build Configuration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Build Configuration.xcconfig"; path = "Resources/Build Configuration/Build Configuration.xcconfig"; sourceTree = "<group>"; };
-		4C5189731F374EC9007C161C /* Entitlements.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Entitlements.entitlements; path = "Resources/Build Configuration/Entitlements.entitlements"; sourceTree = "<group>"; };
 		4C5189751F374EC9007C161C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
 		4C5189761F374F63007C161C /* AppleReceiptLoader_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppleReceiptLoader_Prefix.pch; path = Classes/Headers/Private/AppleReceiptLoader_Prefix.pch; sourceTree = "<group>"; };
 		4C5189901F3751C0007C161C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -96,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				4C5189721F374EC9007C161C /* Build Configuration.xcconfig */,
-				4C5189731F374EC9007C161C /* Entitlements.entitlements */,
 			);
 			name = "Build Configuration";
 			sourceTree = "<group>";
