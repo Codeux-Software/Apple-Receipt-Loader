@@ -6,7 +6,7 @@ information, can be found by viewing the included ACKNOWLEDGEMENT.txt file.
 
 /* *********************************************************************
  *
- *         Copyright (c) 2017, 2018 Codeux Software, LLC
+ *        Copyright (c) 2017 - 2020 Codeux Software, LLC
  *     Please see ACKNOWLEDGEMENT for additional information.
  *
  * Redistribution and use in source and binary forms, with or without
