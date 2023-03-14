@@ -57,22 +57,23 @@ NSData * _Nullable _ARLDigestForReceipt(ARLReceiptContents *receipt)
 	}
 
 	/* Declare and initialize an EVP context for OpenSSL. */
-	EVP_MD_CTX evp_ctx;
-	EVP_MD_CTX_init(&evp_ctx);
+	EVP_MD_CTX* evp_ctx = EVP_MD_CTX_new();
 
 	/* A buffer for result of the hash computation. */
 	NSMutableData *digest = [NSMutableData dataWithLength:20];
 
 	/* Set up the EVP context to compute a SHA-1 digest. */
-	EVP_DigestInit_ex(&evp_ctx, EVP_sha1(), NULL);
+	EVP_DigestInit_ex(evp_ctx, EVP_sha1(), NULL);
 
 	/* Concatenate the pieces to be hashed.  They must be concatenated in this order. */
-	EVP_DigestUpdate(&evp_ctx, macAddress.bytes, macAddress.length);
-	EVP_DigestUpdate(&evp_ctx, receipt.opaqueData.bytes, receipt.opaqueData.length);
-	EVP_DigestUpdate(&evp_ctx, receipt.bundleIdentifierData.bytes, receipt.bundleIdentifierData.length);
+	EVP_DigestUpdate(evp_ctx, macAddress.bytes, macAddress.length);
+	EVP_DigestUpdate(evp_ctx, receipt.opaqueData.bytes, receipt.opaqueData.length);
+	EVP_DigestUpdate(evp_ctx, receipt.bundleIdentifierData.bytes, receipt.bundleIdentifierData.length);
 
 	/* Compute the hash, saving the result into the digest variable. */
-	EVP_DigestFinal_ex(&evp_ctx, digest.mutableBytes, NULL);
+	EVP_DigestFinal_ex(evp_ctx, digest.mutableBytes, NULL);
+	
+	EVP_MD_CTX_free(evp_ctx);
 
 	/* Return result. */
 	return [digest copy];
