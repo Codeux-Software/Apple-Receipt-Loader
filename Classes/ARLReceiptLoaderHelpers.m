@@ -203,7 +203,11 @@ NSData * _Nullable _ARLAppleRootCertificateData(void)
 	CFDataRef certificateDataRef = NULL;
 
 	/* Open the system keychain */
+	/* TODO: SecKeychainOpen() is deprecated. - 03/14/2023 */
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 	OSStatus status = SecKeychainOpen("/System/Library/Keychains/SystemRootCertificates.keychain", &systemKeychainRef);
+#pragma clang diagnostic pop
 
 	if (status != noErr) {
 		_ARLLogSecurityFrameworkError(status);
